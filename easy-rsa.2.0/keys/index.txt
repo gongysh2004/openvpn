@@ -1,0 +1,3 @@
+V	250427005357Z		01	unknown	/C=CN/ST=BJ/L=BJ/O=99cloud/OU=bj/CN=99cloudvpnserver/name=EasyRSA/emailAddress=gong.yongsheng@99cloud.net
+V	250427005420Z		02	unknown	/C=CN/ST=BJ/L=BJ/O=99cloud/OU=bj/CN=99cloudvpnclientbj/name=EasyRSA/emailAddress=gong.yongsheng@99cloud.net
+V	250427005459Z		03	unknown	/C=CN/ST=BJ/L=BJ/O=99cloud/OU=bj/CN=99cloudvpnclientsh/name=EasyRSA/emailAddress=gong.yongsheng@99cloud.net
