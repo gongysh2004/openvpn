@@ -9,5 +9,6 @@ cp clients/* /etc/openvpn/clients
 cp certs/* /etc/openvpn/certs
 
 sysctl -w net.ipv4.ip_forward=1
+# iptables-save -t nat -I POSTROUTING -o eth0 -j MASQUERADE
 cd ..
 # restorecon -Rv /etc/openvpn
