@@ -27,7 +27,7 @@ if [[ "y${eip}y" != "yy" ]]; then
     echo "Checking eip $eip is disociated..."
     ret=`qingcloud iaas describe-eips -e $eip`
     check_retcode "$ret"
-    status=`echo -e "$ret" | grep -e '\"status' | awk -F\" '{ print $4}'`
+    status=`echo -e "$ret" | grep -e '\"status\":' | awk -F\" '{ print $4}'`
     while :
     do
        echo "$status"
@@ -38,7 +38,7 @@ if [[ "y${eip}y" != "yy" ]]; then
          echo -e ".\c"
          ret=`qingcloud iaas describe-eips -e $eip`
          check_retcode "$ret"
-         status=`echo -e "$ret" | grep -e '\"status' | awk -F\" '{ print $4}'`
+         status=`echo -e "$ret" | grep -e '\"status\":' | awk -F\" '{ print $4}'`
        fi
     done
 fi
