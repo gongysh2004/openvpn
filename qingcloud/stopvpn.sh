@@ -1,4 +1,4 @@
-vpninsid='i-rj8b03a6'
+vpninsid='i-1j1cealo'
 function echo_and_exit()
 {
     echo -e "$1"
@@ -14,6 +14,8 @@ function check_retcode()
    echo  "return code $retcode"
    echo_and_exit $retcode
 }
+echo "Stop openvpn ..."
+sudo systemctl stop openvpn@client
 echo "Get eip of instance $vpninsid ..."
 ret=`qingcloud iaas describe-instances -i $vpninsid`
 check_retcode "$ret"

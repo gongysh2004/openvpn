@@ -9,6 +9,7 @@ cp clients/* /etc/openvpn/clients
 cp certs/* /etc/openvpn/certs
 
 sysctl -w net.ipv4.ip_forward=1
+#ln -s /lib/systemd/system/openvpn\@.service /etc/systemd/system/multi-user.target.wants/openvpn\@server.service
 # echo 'net.ipv4.ip_forward=1' >> /etc/sysctl.conf
 # yum install iptables-services
 # touch /etc/sysconfig/iptables

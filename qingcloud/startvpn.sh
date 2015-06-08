@@ -1,4 +1,4 @@
-vpninsid='i-rj8b03a6'
+vpninsid='i-1j1cealo'
 function echo_and_exit()
 {
     echo $1
